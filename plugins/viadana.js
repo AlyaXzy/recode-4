@@ -22,7 +22,7 @@ let info = `╠═〘 PEMBAYARAN 〙 ═
 ║ 
 ╠═ ©2021 wabot-aq
 ╠═ Scrip original by Nurutomo
-╠═〘 RAD BOT〙 ═
+╠═〘 YanZ BotZ 〙 ═
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Sewa Bot*', 'status@broadcast') 
