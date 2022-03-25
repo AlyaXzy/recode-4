@@ -32,7 +32,7 @@ const defaultMenu = {
   body: '⁙┃〲 %cmd %islimit %isPremium',
   footer: '⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°\n',
   after: `
-*%npmname@^%version*
+*%LiaXd@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -223,7 +223,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `©BOT ツˣᴿᶻズガx`.trim(),
+                        "description": `© LIA BOTZ   🥀`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Click Here*",
                         "listType": "SINGLE_SELECT",
@@ -365,7 +365,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik ツˣᴿᶻズガx",
+                                    "description": "pemilik YANZTODツ",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
