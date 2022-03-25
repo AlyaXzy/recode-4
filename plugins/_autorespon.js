@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'RadBot tidak aktif' : banned ? 'kamu dibanned' : 'RadBotZ disini',
-                '©RadBotZ',
+                isBanned ? 'LiaBot tidak aktif' : banned ? 'kamu dibanned' : 'LiaBotZ disini',
+                '© LiaBotZ',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -30,19 +30,19 @@ handler.all = async function (m, { isBlocked }) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
 ╠➥ *1 Bulan* :      *Rp 10000*
-╠➥ *Permanen* : *Rp 15000*
-╠➥ *Premium* :   *Rp 15000*
+╠➥ *2 Bulan* : *Rp 15000*
+╠➥ *5 Bulan* :   *Rp 20000*
 ╠➥ *Sc Bot* :        *Masih Beta*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
-╠➥ Dana, Dan Pulsa
+╠➥ Gopay, Dan Pulsa
 ║
 ╠═ Tertarik Untuk Beli Bot Ini?
 ╠➥Ketuk Tombol Di Bawah Ya
 ║
 ╠═ ©2021 Rpg wabot-aq
 ╠═ Scrip original by Nurutomo
-╠═〘 RAD BOT〙 ═`.trim(), '©RadBotZ', 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
+╠═〘 YANz B0Tz 〙 ═`.trim(), '© YanZBotZ', 'Gopay', '#viagopay', 'Pulsa', '#viapulsa', m)
 }
 
     // salam
@@ -72,7 +72,7 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`⏰Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |RadBotZ🤖 by Raditya`).catch(_ => _)
+        await this.setStatus(`Aktif selama ${uptime} ⏲️| Mode: ${global.opts['self'] ? 'Private 🛌' : setting.groupOnly ? 'Hanya Grup' : 'Publik 👾'} |YanZBotZ🤖 by Bunyan-Gans`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
